@@ -40,7 +40,7 @@ a {
     border-radius: 10px;
 }
 
-        /* Navbar */
+/* Navbar */
 
 
 .navbar {
@@ -74,11 +74,11 @@ a {
 }
 
 
-        /* Fin Navbar */
+/* Fin Navbar */
 
 
 
-        /* Section Accueil */
+/* Section Accueil */
 
 
 #accueil {
@@ -161,11 +161,11 @@ a {
     }
 }
 
-        /* Fin Section Accueil */
+/* Fin Section Accueil */
 
 
 
-        /* Section Profil */
+/* Section Profil */
 
 
 #profil {
@@ -244,11 +244,11 @@ a {
     color: var(--blue);
 }
 
-        /* Fin Section Profil */
+/* Fin Section Profil */
 
 
 
-        /* Section Compétences */
+/* Section Compétences */
 
 
 #parcours {
@@ -324,7 +324,8 @@ a {
     margin-top: 2px;
 }
 
-#parcours .container .content ul, li {
+#parcours .container .content ul,
+li {
     list-style: none;
     padding: 0;
 }
@@ -353,7 +354,7 @@ a {
     top: 0px;
 }
 
-#parcours .container .content .sessions li:nth-child(3):before{
+#parcours .container .content .sessions li:nth-child(3):before {
     position: absolute;
     left: -7.1px;
 }
@@ -366,14 +367,14 @@ a {
 #parcours .container .content .sessions li p {
     color: #a9a9a9;
     line-height: 1.5;
-    margin-top :0.4rem;
+    margin-top: 0.4rem;
 }
 
 
-        /* Fin Section Compétences */
+/* Fin Section Compétences */
 
 
-        /* Section Skills */
+/* Section Skills */
 
 
 #competences .skills {
@@ -396,10 +397,10 @@ a {
 }
 
 
-        /* Fin Section Skills */
+/* Fin Section Skills */
 
 
-        /* Section Projets */
+/* Section Projets */
 
 
 #projets,
@@ -464,6 +465,7 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
+
     #projets .container .left-content .gsb,
     #projets .container .left-content .ratp {
         display: none;
@@ -581,7 +583,7 @@ a {
     box-shadow: 0px 0px 17px 3px rgba(218, 218, 218, 0.54);
 }
 
-#projets .container .card .card-body button:hover  {
+#projets .container .card .card-body button:hover {
     transform: scale(1.02);
     box-shadow: 3px 2px 2px grey;
 }
@@ -591,11 +593,11 @@ a {
 }
 
 
-        /* Fin Section Projets */
+/* Fin Section Projets */
 
 
 
-        /* Section Contact */
+/* Section Contact */
 
 
 #contact .container footer {
@@ -651,4 +653,4 @@ a {
 }
 
 
-        /* Fin Section Contact */
+/* Fin Section Contact */
