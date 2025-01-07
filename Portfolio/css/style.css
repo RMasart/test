@@ -432,12 +432,12 @@ li {
     left: 0;
 }
 
-#projets .container .gsb-content {
+#projets .container .AP3-content {
     display: flex;
     padding-left: -40px;
 }
 
-#projets .container .gsb-content .intro {
+#projets .container .AP3-content .intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: -40px;
@@ -451,7 +451,7 @@ li {
     align-items: center;
 }
 
-#projets .container .gsb-content .intro .right-content {
+#projets .container .AP3-content .intro .right-content {
     max-width: 80%;
 }
 
@@ -459,19 +459,19 @@ li {
     max-width: 45%;
 }
 
-#projets .container .left-content .gsb {
-    width: 250px;
-    height: 150px;
+#projets .container .left-content .AP3 {
+    width: 350px;
+    height: 350px;
 }
 
 @media screen and (max-width: 1024px) {
 
-    #projets .container .left-content .gsb,
+    #projets .container .left-content .AP3,
     #projets .container .left-content .ratp {
         display: none;
     }
 
-    #projets .container .gsb-content .intro,
+    #projets .container .AP3-content .intro,
     #projets .container .ratp-content .right-content {
         display: grid;
         grid-template-columns: 1fr;
@@ -539,8 +539,8 @@ li {
     padding: 10px;
 }
 
-#projets .container .project-skills .card .img_symfony {
-    width: 180px;
+#projets .container .project-skills .card .flutter {
+    width: 50px;
 }
 
 #projets .container .project-skills .card .card-body button {
@@ -550,12 +550,12 @@ li {
     background-color: var(--blue);
 }
 
-#projets .project-skills .card .img_doctrine {
-    width: 130px;
+#projets .project-skills .card .figma {
+    width: 40px;
 }
 
-#projets .project-skills .card .img_dbdiagram {
-    width: 250px;
+#projets .project-skills .card .Lucidchart {
+    width: 80px;
 }
 
 #projets .container .project-skills .card button {
