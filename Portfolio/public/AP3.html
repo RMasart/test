@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/AP3.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <button onclick="gotoPage()" class="top-left-button">Retour a l'accueil</button>
+    <!-- Section "Projets" -->
+    <section id="projets">
+        <div class="container">
+            <h1>Mes Projets</h1>
+            <div class="image-grid">
+                <div class="image-item">
+                    <p>Module 1 : Connexion des caristes</p>
+                    <img src="../assets/AP3-log.png" alt="Projet 1" class="thumbnail" onclick="openImage(this)">
+                </div>
+                <div class="image-item">
+                    <p>Module 6 : Liste des produits</p>
+                    <img src="../assets/AP3-accueil.png" alt="Projet 2" class="thumbnail" onclick="openImage(this)">
+                </div>
+                <div class="image-item">
+                    <p>Module 7 : Mode déconnecté</p>
+                    <img src="../assets/AP3-hamburger.png" alt="Projet 3" class="thumbnail" onclick="openImage(this)">
+                </div>
+                <div class="image-item">
+                    <p>Module 2 : Flash des QR code</p>
+                    <img src="../assets/AP3-QR.png" alt="Projet 4" class="thumbnail" onclick="openImage(this)">
+                </div>
+                <div class="image-item">
+                    <p>Module 4 : Arrivage de stock <br> Module 5 : Synchronisation des stocks</p>
+                    <img src="../assets/AP3-delivery.png" alt="Projet 5" class="thumbnail" onclick="openImage(this)">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Fin Section "Projets" -->
+
+    <!-- Fenêtre modale pour agrandir l'image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- JavaScript pour ouvrir et fermer la fenêtre modale -->
+    <script>
+        // Ouvre l'image dans la fenêtre modale
+        function openImage(element) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+            var caption = document.getElementById("caption");
+
+            modal.style.display = "block"; // Affiche la modale
+            modalImg.src = element.src;  // Change l'image
+            caption.innerHTML = element.alt; // Ajoute la légende
+        }
+
+        // Ferme la fenêtre modale
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none"; // Cache la modale
+        }
+
+        // Ferme la modale si l'utilisateur clique en dehors de l'image
+        window.onclick = function (event) {
+            var modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function gotoPage() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+
+</html>

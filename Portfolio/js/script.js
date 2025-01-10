@@ -41,3 +41,9 @@ new Typewriter(txtAnim, {
     .pauseFor(1000)
     .start()
 
+function gotoPage() {
+    window.location.href = "AP3.html";
+}
+function gotoPage2() {
+    window.location.href = "AP2.html";
+}

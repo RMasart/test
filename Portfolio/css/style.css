@@ -506,6 +506,14 @@ li {
     padding-bottom: 10px;
 }
 
+.btnAP3 {
+    background-color: #27C2E6;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    transition: ease-in-out 0.2s;
+}
+
 #projets .container .right-content h4 {
     color: #27C2E6;
     margin-bottom: 30px;
@@ -555,6 +563,18 @@ li {
 }
 
 #projets .project-skills .card .Lucidchart {
+    width: 80px;
+}
+
+#projets .project-skills .card .javaFX {
+    width: 140px;
+}
+
+#projets .project-skills .card .mysql {
+    width: 100px;
+}
+
+#projets .project-skills .card .notion {
     width: 80px;
 }
 
