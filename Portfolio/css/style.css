@@ -562,6 +562,10 @@ li {
     width: 40px;
 }
 
+#projets .project-skills .card .elon {
+    width: 350px;
+}
+
 #projets .project-skills .card .Lucidchart {
     width: 80px;
 }
