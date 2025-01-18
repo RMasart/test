@@ -570,6 +570,10 @@ li {
     width: 80px;
 }
 
+#projets .project-skills .card .puce {
+    width: 90px;
+}
+
 #projets .project-skills .card .javaFX {
     width: 140px;
 }
