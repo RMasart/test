@@ -1,0 +1,129 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(57, 57, 57);
+    /* Fond sombre */
+    color: #e0e0e0;
+    /* Texte clair pour un bon contraste */
+}
+
+.top-left-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #27C2E6;
+    transition: ease-in-out 0.2s;
+}
+
+/* Ajouter un effet au survol du bouton */
+.top-left-button:hover {
+    background-color: #027f9b;
+}
+
+/* Section "Projets" */
+#projets {
+    padding: 20px;
+    text-align: center;
+}
+
+#projets h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+    /* Titre en couleur claire */
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    flex: 1 1 200px;
+    margin: 10px;
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 3px solid #444;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    /* Ombre plus marquée au survol */
+}
+
+/* Fenêtre modale */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Fond de la modal en noir transparent */
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    /* Ombre pour donner du relief à l'image agrandie */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    /* X de fermeture en couleur claire */
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    /* Changement de couleur au survol */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Pour mobile */
+@media only screen and (max-width: 600px) {
+    .image-grid {
+        flex-direction: column;
+    }
+}

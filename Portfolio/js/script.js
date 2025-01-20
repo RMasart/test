@@ -47,3 +47,6 @@ function gotoPage() {
 function gotoPage2() {
     window.location.href = "AP2.html";
 }
+function gotoPage3() {
+    window.location.href = "Veille.html";
+}

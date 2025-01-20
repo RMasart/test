@@ -514,6 +514,14 @@ li {
     transition: ease-in-out 0.2s;
 }
 
+.btnVeille {
+    background-color: #27C2E6;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    transition: ease-in-out 0.2s;
+}
+
 #projets .container .right-content h4 {
     color: #27C2E6;
     margin-bottom: 30px;

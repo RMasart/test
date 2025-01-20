@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/veille.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <button onclick="gotoPage()" class="top-left-button">Retour a l'accueil</button>
+    <!-- Section "Projets" -->
+    <section id="projets">
+        <div class="container">
+            <h1>Les Interfaces cerveaux</h1>
+            <div class="image-grid">
+                <div class="image-item">
+                    <p>ICO</p>
+                    <p class="thumbnail">Un ICO en neuro-technologie (Interface Cerveau-Ordinateur) est un système
+                        permettant une communication directe entre le cerveau humain et un dispositif externe, souvent
+                        utilisé pour contrôler des appareils ou interpréter l'activité cérébrale à des fins médicales,
+                        scientifiques ou technologiques.</p>
+                </div>
+                <div class="image-item">
+                    <p>ICM</p>
+                    <p class="thumbnail">Un ICM en neuro-technologie (Interface Cerveau-Machine) est une technologie qui
+                        établit une connexion directe entre le cerveau humain et une machine, permettant d'interagir
+                        avec des dispositifs mécaniques ou électroniques en interprétant les signaux neuronaux.</p>
+                </div>
+                <div class="image-item">
+                    <p>Neurotechnologique</p>
+                    <p class="thumbnail">La neuro-technologie désigne l'ensemble des technologies qui explorent,
+                        mesurent, modifient ou interagissent avec le système nerveux, souvent dans le but de comprendre
+                        le fonctionnement du cerveau, traiter des troubles neurologiques ou améliorer les capacités
+                        humaines.</p>
+                </div>
+                <div class="image-item">
+                    <p>Neuralink</p>
+                    <img src="../assets/neuralink.png" alt="Neuralink" class="thumbnail" onclick="openImage(this)">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Fin Section "Projets" -->
+
+    <!-- Fenêtre modale pour agrandir l'image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- JavaScript pour ouvrir et fermer la fenêtre modale -->
+    <script>
+        // Ouvre l'image dans la fenêtre modale
+        function openImage(element) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+            var caption = document.getElementById("caption");
+
+            modal.style.display = "block"; // Affiche la modale
+            modalImg.src = element.src;  // Change l'image
+            caption.innerHTML = element.alt; // Ajoute la légende
+        }
+
+        // Ferme la fenêtre modale
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none"; // Cache la modale
+        }
+
+        // Ferme la modale si l'utilisateur clique en dehors de l'image
+        window.onclick = function (event) {
+            var modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function gotoPage() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+
+</html>
