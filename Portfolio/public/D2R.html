@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/AP2.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <button onclick="gotoPage()" class="top-left-button">Retour a l'accueil</button>
+    <!-- Section "Projets" -->
+    <section id="projets">
+        <div class="container">
+            <h1>Association D2R- Donner Recevoir Rendre</h1>
+            <div class="image-grid">
+                <div class="image-item">
+                    <p>Login</p>
+                    <img src="../assets/loginD2R.png" alt="Login" class="thumbnail" onclick="openImage(this)">
+                </div>
+                <div class="image-item">
+                    <p>Bataille Navale</p>
+                    <img src="../assets/navale.png" alt="Bataille navale" class="thumbnail" onclick="openImage(this)">
+                </div>
+                <div class="image-item">
+                    <p>Quiz</p>
+                    <img src="../assets/quiz.png" alt="Quiz" class="thumbnail" onclick="openImage(this)">
+                </div>
+                <div class="image-item">
+                    <p>Chasse au trésor</p>
+                    <img src="../assets/chasse.png" alt="Chasse au trésor" class="thumbnail" onclick="openImage(this)">
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Fin Section "Projets" -->
+
+    <!-- Fenêtre modale pour agrandir l'image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- JavaScript pour ouvrir et fermer la fenêtre modale -->
+    <script>
+        // Ouvre l'image dans la fenêtre modale
+        function openImage(element) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+            var caption = document.getElementById("caption");
+
+            modal.style.display = "block"; // Affiche la modale
+            modalImg.src = element.src;  // Change l'image
+            caption.innerHTML = element.alt; // Ajoute la légende
+        }
+
+        // Ferme la fenêtre modale
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none"; // Cache la modale
+        }
+
+        // Ferme la modale si l'utilisateur clique en dehors de l'image
+        window.onclick = function (event) {
+            var modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function gotoPage() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -53,3 +53,6 @@ function gotoPage3() {
 function gotoPage4() {
     window.location.href = "SNCF.html";
 }
+function gotoPage5() {
+    window.location.href = "D2R.html";
+}   
