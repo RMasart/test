@@ -50,3 +50,6 @@ function gotoPage2() {
 function gotoPage3() {
     window.location.href = "Veille.html";
 }
+function gotoPage4() {
+    window.location.href = "SNCF.html";
+}
