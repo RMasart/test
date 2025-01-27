@@ -62,3 +62,6 @@ function gotoPage6() {
 function gotoPage7() {
     window.location.href = "tableau.html";
 }
+function gotoPage8() {
+    window.location.href = "https://drive.google.com/drive/u/0/folders/1PlXzaqhYNPUBYHyOqY5q7V2UUKcyvICT";
+}
