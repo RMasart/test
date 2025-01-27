@@ -55,4 +55,10 @@ function gotoPage4() {
 }
 function gotoPage5() {
     window.location.href = "D2R.html";
-}   
+}
+function gotoPage6() {
+    window.location.href = "https://drive.google.com/drive/u/0/folders/11el2xoHc8YXs_FWEK0baW7SJ8AXfZeo3";
+}
+function gotoPage7() {
+    window.location.href = "tableau.html";
+}
