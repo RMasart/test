@@ -68,3 +68,6 @@ function gotoPage8() {
 function gotoPage9() {
     window.location.href = "https://drive.google.com/drive/u/0/folders/1t8MM9csdwyf7E7cwKQP0nuek_dn4FQzT";
 }
+function gotoPage10() {
+    window.location.href = "index.html";
+}
